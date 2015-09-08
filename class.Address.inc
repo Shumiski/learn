@@ -1,6 +1,7 @@
 <?php
 
 class Address {
+    //Properties
     public $streetAddress1;
     public $streetAddress2;
     
@@ -10,6 +11,30 @@ class Address {
     public $postalCode;
     
     public $country;
+    
+    //Methods
+    function display(){
+        $output ="";
+        
+        //display street
+        $output .= $this->streetAddress1;
+        if($this->streetAddress2){
+            $output .= "<br>" . $this->streetAddress2;
+        }
+        
+        //city, subd, postal code
+        $output .= "<br>";
+        $output .= $this->cityName . "," . $this->subdivisionName;
+        $output .= " " . $this->postalCode;
+        
+        //country
+        $output .= "<br>";
+        $output .= $this->country;
+        
+        //return
+        return $output;
+        
+    }
 }
 
 ?>
