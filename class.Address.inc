@@ -19,16 +19,16 @@ class Address {
         //display street
         $output .= $this->streetAddress1;
         if($this->streetAddress2){
-            $output .= "<br>" . $this->streetAddress2;
+            $output .= "<br/>" . $this->streetAddress2;
         }
         
         //city, subd, postal code
-        $output .= "<br>";
-        $output .= $this->cityName . "," . $this->subdivisionName;
+        $output .= "<br/>";
+        $output .= $this->cityName . ", " . $this->subdivisionName;
         $output .= " " . $this->postalCode;
         
         //country
-        $output .= "<br>";
+        $output .= "<br/>";
         $output .= $this->country;
         
         //return
