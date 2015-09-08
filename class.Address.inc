@@ -12,6 +12,14 @@ class Address {
     
     public $country;
     
+    
+    //protected properties
+    protected $_addressId;
+    protected $_timeCreated;
+    protected $_timeUpdated;
+    
+    
+    
     //Methods
     function display(){
         $output ="";
